@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     .nav-btn {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         font-size: 1.2em;
     }
     
@@ -469,7 +469,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     z-index: 1000;
-    width: 100%;
+    width: 70%;
     pointer-events: none;
     display: flex;
     justify-content: space-between;
@@ -534,3 +534,4 @@ img{
     .message-card { padding: 25px; margin: 0 20px; }
     .cake-big { transform: scale(0.8); }
 }
+
