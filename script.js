@@ -40,7 +40,7 @@ let currentSection = 1;
         // Avvia la sequenza automatica
         let sectionTimer = setTimeout(() => {
             autoPlaySections();
-        }, 4000);
+        }, 10000);
     }
 
     function autoPlaySections() {
@@ -51,11 +51,11 @@ let currentSection = 1;
             // Tempo ancora più lungo per la sezione del messaggio
             let delay;
             if (currentSection === 4) {
-                delay = 15000; // 15 secondi per leggere comodamente il messaggio
+                delay = 30000; // 30 secondi per leggere comodamente il messaggio
             } else if (currentSection === 5) {
-                delay = 5000;  // 5 secondi per la torta
+                delay = 15000;  // 5 secondi per la torta
             } else {
-                delay = 4000;  // 4 secondi per le altre sezioni
+                delay = 10000;  // 4 secondi per le altre sezioni
             }
             
             setTimeout(() => {
@@ -98,7 +98,7 @@ let currentSection = 1;
     }
 
     function startTypingEffect() {
-        const message = "Tanti auguri alla sorellina più carina e coccolosa del mondo! 🥰<br><br>Che tu possa continuare ad essere sempre così buffa e divertente!";
+        const message = "Tanti auguri alla sorellina più carina e coccolosa del mondo! 🥰 Che tu possa continuare ad essere sempre così buffa e divertente!";
         const element = document.getElementById('typing-message');
         let i = 0;
         isTypingComplete = false;
@@ -123,7 +123,7 @@ let currentSection = 1;
     function skipTyping() {
         if (typingInterval) {
             clearInterval(typingInterval);
-            const fullMessage = "Tanti auguri alla sorellina più carina e coccolosa del mondo! 🥰<br><br>Che tu possa continuare ad essere sempre così buffa e divertente!";
+            const fullMessage = "Tanti auguri alla sorellina più carina e coccolosa del mondo! 🥰 Che tu possa continuare ad essere sempre così buffa e divertente!";
             document.getElementById('typing-message').innerHTML = fullMessage;
             isTypingComplete = true;
         }
