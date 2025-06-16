@@ -1,3 +1,4 @@
+
 let currentSection = 1;
     const totalSections = 6;
     let videoPlaying = false;
