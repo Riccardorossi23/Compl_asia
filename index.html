@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Auguri per Asia! 🎂</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="video-container">
+        <!-- Sezione 1: Titolo iniziale -->
+        <section class="video-section active" id="section-1">
+            <div class="content">
+                <h1 class="big-title fade-in">🎬 Video Auguri 🎬</h1>
+                <h2 class="subtitle fade-in-delay">per la nostra</h2>
+                <h1 class="name-title fade-in-delay-2">ASIA</h1>
+                <button class="start-button" onclick="startVideo()">▶️ INIZIA IL VIDEO</button>
+            </div>
+            <div class="background-effects">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+        </section>
+
+        <!-- Sezione 2: Foto di Asia -->
+        <section class="video-section" id="section-2">
+            <div class="content">
+                <div class="photo-frame">
+                    <canvas id="photo-canvas" width="300" height="400"></canvas>
+                    <div class="photo-overlay">
+                        <h2 class="photo-title">La nostra dolce Asia ❤️</h2>
+                    </div>
+                </div>
+                <div class="floating-hearts">
+                    <div class="heart">💝</div>
+                    <div class="heart">💖</div>
+                    <div class="heart">💕</div>
+                    <div class="heart">💙</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione 3: Età -->
+        <section class="video-section" id="section-3">
+            <div class="content">
+                <h1 class="age-big">17</h1>
+                <h2 class="age-text">ANNI!</h2>
+                <div class="celebration-burst">
+                    <div class="burst-particle"></div>
+                    <div class="burst-particle"></div>
+                    <div class="burst-particle"></div>
+                    <div class="burst-particle"></div>
+                    <div class="burst-particle"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione 4: Messaggio -->
+        <section class="video-section" id="section-4">
+            <div class="content">
+                <div class="message-card">
+                    <h3>💌 I nostri auguri 💌</h3>
+                    <p class="typing-text" id="typing-message"></p>
+                    <div class="typing-controls">
+                        <button class="speed-btn" onclick="skipTyping()">⏩ Salta</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione 5: Torta -->
+        <section class="video-section" id="section-5">
+            <div class="content">
+                <div class="cake-big">
+                    <div class="cake-layer cake-bottom"></div>
+                    <div class="cake-layer cake-middle"></div>
+                    <div class="cake-layer cake-top"></div>
+                    <div class="candles">
+                        <div class="candle"><div class="flame"></div></div>
+                        <div class="candle"><div class="flame"></div></div>
+                        <div class="candle"><div class="flame"></div></div>
+                    </div>
+                </div>
+                <p class="cake-text">Esprimi un desiderio! ✨</p>
+            </div>
+        </section>
+
+        <!-- Sezione 6: Finale -->
+        <section class="video-section" id="section-6">
+            <div class="content">
+                <h1 class="final-title">🎉 BUON COMPLEANNO 🎉</h1>
+                <h2 class="final-name">ASIA!</h2>
+                <div class="final-wishes">
+                    <div class="memories-gallery">
+                        <img src="asia.jpeg" class="memory-photo" alt="Ricordo 1">
+                </div>
+                <button class="replay-button" onclick="replayVideo()">🔄 RIVEDI IL VIDEO</button>
+            </div>
+        </section>
+
+        <!-- Effetti di sfondo globali -->
+        <div class="confetti-container">
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+        </div>
+
+        <!-- Progress bar -->
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+
+        <!-- Navigation arrows -->
+        <div class="nav-arrows">
+            <button class="nav-btn prev-btn" onclick="goToPrevSection()" id="prevBtn">
+                <span>←</span>
+            </button>
+            <button class="nav-btn next-btn" onclick="goToNextSection()" id="nextBtn">
+                <span>→</span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
